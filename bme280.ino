@@ -64,7 +64,7 @@ void setup() {
         while (1) delay(1);
     }
     
-    Serial.println("BME280 Connected Successfully - send data in the serial monitor to print the gathered sensor data");
+    Serial.println("BME280 Connected Successfully - send data in the serial monitor to print the gathered sensor data - temp to print temp - hum to print humidity - pressure to print pressure - alt to print altitude");
 }
 
   void printArr(float arr[], String msg) {
@@ -92,6 +92,14 @@ void loop() {
       printArr(humidityArr, "hum num ");
       printArr(pressureArr, "pressure num ");
       printArr(altArr, "alt num ");
+    } else if (input == "temp") {
+      printArr(tempArr, "temp num ");
+    } else if (input == "hum") {
+      printArr(humidityArr, "hum num ");
+    } else if (input == "pressure") {
+      printArr(pressureArr, "pressure num ");
+    } else if (input == "alt") {
+      printArr(pressureArr, "pressure num ");
     }
 
     index++;

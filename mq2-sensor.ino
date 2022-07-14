@@ -16,6 +16,8 @@
     mq2.begin();
     Serial.begin(9600);
     Serial.setTimeout(2000);
+
+    Serial.println("mq2 sensor successfully connected - send data in the serial monitor to print all gathered data - lpg to print lpg - co to print co - smoke to print smoke");
   }
 
   void printArr(float arr[], String msg) {
@@ -48,6 +50,14 @@
       printArr(lpgArr, "lpg num ");
       printArr(coArr, "co num ");
       printArr(smokeArr, "smoke num ");
+    } else if (input == "lpg") {
+      printArr(lpgArr, "lpg num ");
+    }
+    else if (input == "co") {
+      printArr(coArr, "co num ");
+    } 
+    else if (input == "smoke") {
+        printArr(smokeArr, "smoke num ");
     }
 
 
