@@ -1,0 +1,5 @@
+hum,61.94,68.84,69.74,78.09,78.90,79.19,78.79,77.99,77.54,79.26,78.62,77.90
+co2,622.00,709.00,750.00,649.00,519.00,611.00,601.00,567.00,529.00,566.00,562.00,570.00
+temp,24.18,22.70,22.18,23.32,23.58,23.40,23.94,24.79,25.77,24.33,23.58,23.28
+
+//this was taken walking around the school - students took notes on where they went - each reading was taken once every two minutes
